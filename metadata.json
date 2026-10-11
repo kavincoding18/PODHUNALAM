@@ -1,0 +1,6 @@
+{
+  "name": "PODHUNALAM (பொதுநலம்) — Public Grievance Management Platform",
+  "description": "Bilingual Tamil-English public grievance management and district accountability platform empowering citizens, field officers, and district administrators.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
