@@ -11,6 +11,8 @@ import {
 import { Grievance } from '../types';
 import { Language, translations } from '../i18n/translations';
 import { store } from '../services/store';
+import roadBeforeImg from '../assets/images/evidence_road_before_1791743003638.jpg';
+import roadAfterImg from '../assets/images/evidence_road_after_1791743015421.jpg';
 
 interface EvidenceModalProps {
   isOpen: boolean;
@@ -36,10 +38,10 @@ export const EvidenceModal: React.FC<EvidenceModalProps> = ({
   const [workOrderNumber, setWorkOrderNumber] = useState('');
   const [completionDate, setCompletionDate] = useState(new Date().toISOString().split('T')[0]);
   const [beforePhotoUrl, setBeforePhotoUrl] = useState(
-    grievance.photos[0] || '/src/assets/images/evidence_road_before_1791743003638.jpg'
+    grievance.photos[0] || roadBeforeImg
   );
   const [afterPhotoUrl, setAfterPhotoUrl] = useState(
-    '/src/assets/images/evidence_road_after_1791743015421.jpg'
+    roadAfterImg
   );
   const [captureInspectionCoords, setCaptureInspectionCoords] = useState(true);
   const [isSubmitting, setIsSubmitting] = useState(false);

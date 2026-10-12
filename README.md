@@ -3,7 +3,7 @@
 > **“One District. One Platform. Every Problem Accounted For.”**  
 > *“ஒரு மாவட்டம். ஒரே தளம். ஒவ்வொரு பிரச்சனைக்கும் பொறுப்புக்கூறல்.”*
 
-PODHUNALAM is a full-stack, bilingual (Tamil & English) civic technology platform built for district administrative accountability. It connects citizens directly with taluk, divisional, and district-level officers across Tamil Nadu, enforcing a strict evidence-based resolution and supervisory verification lifecycle.
+PODHUNALAM is a full-stack, bilingual (Tamil & English) civic technology platform built for district administrative accountability in Tiruchirappalli District & City Corporation. It connects citizens directly with taluk, divisional, corporation, and district-level officers, enforcing a strict evidence-based resolution and supervisory verification lifecycle.
 
 ---
 
@@ -94,20 +94,37 @@ npm run build
 
 ### Demonstration & Testing Mode
 The top bar features an **Active Role Selector Strip** allowing instant switching between all 7 roles:
-- **Citizen** (`Anitha Ramanathan`)
-- **Camp Operator** (`M. Selvam`)
-- **AO / Tahsildar** (`K. Murugesan`)
-- **RDO Division** (`Dr. S. Radhakrishnan`)
-- **DRO District** (`P. Vasantha Kumari`)
-- **Collector (IAS)** (`Thiru A. Arun Raj, IAS`)
-- **System Admin** (`Platform Admin`)
+- **Citizen** (`S. Meenakshi`)
+- **Camp Operator** (`M. Arumugam`)
+- **AO / Tahsildar** (`K. Saravanan, Trichy West`)
+- **RDO Division** (`Dr. M. Anandhan, Trichy Division`)
+- **DRO District** (`Tmt. R. Rajalakshmi`)
+- **Collector (IAS)** (`Thiru Pratik Tayal, IAS, District Collector`)
+- **System Admin** (`Platform Admin / DIO`)
 
 ---
 
-## 6. Verification and Security Controls
+## 6. GitHub Pages Deployment & Workflow Setup
+
+The repository is configured for automated deployment to **GitHub Pages** via GitHub Actions:
+- **Repository URL**: `https://github.com/kavincoding18/PODHUNALAM`
+- **Live GitHub Pages URL**: `https://kavincoding18.github.io/PODHUNALAM/`
+- **Vite Base Path**: Configured as `/PODHUNALAM/` in `vite.config.ts`.
+- **Workflow File**: `.github/workflows/deploy.yml`
+
+### Step-by-Step GitHub Pages Setup
+1. Push your changes to the `main` branch of `https://github.com/kavincoding18/PODHUNALAM`.
+2. Open your repository on GitHub: `https://github.com/kavincoding18/PODHUNALAM`.
+3. Navigate to **Settings** → **Pages** (in the left sidebar).
+4. Under **Build and deployment** → **Source**, select **GitHub Actions**.
+5. Once selected, pushing any commit or manually triggering the workflow (**Actions** tab → **Deploy to GitHub Pages** → **Run workflow**) will install dependencies, build the application, and publish the `dist` bundle.
+
+---
+
+## 7. Verification and Security Controls
 
 - **Bilingual Interface**: Seamless 1-click toggle between தமிழ் and English with authentic translations for every label, status, and department.
 - **Zero-Pill Typography**: Strict compliance with design rules using unboxed text and typographic separators (`·`).
-- **Interactive GIS Map**: Leaflet map centered at Chengalpattu district displaying geo-tagged complaints.
+- **Interactive GIS Map**: Leaflet map centered at Tiruchirappalli City Corporation displaying geo-tagged complaints.
 - **Collector Analytics**: Real-time KPI cards, department workload distribution, and 1-click CSV report export.
 - **Independent Prototype Status**: Clearly labeled as a demonstration prototype for district administration review.

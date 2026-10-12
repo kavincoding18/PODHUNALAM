@@ -11,6 +11,8 @@ import {
   AppNotification, 
   AuditLog 
 } from '../types';
+import roadBeforeImg from '../assets/images/evidence_road_before_1791743003638.jpg';
+import roadAfterImg from '../assets/images/evidence_road_after_1791743015421.jpg';
 
 export const INITIAL_DEPARTMENTS: Department[] = [
   {
@@ -204,7 +206,7 @@ export const INITIAL_GRIEVANCES: Grievance[] = [
     leadDepartmentId: 'dept-highways',
     assignedOfficerId: 'user-ao',
     photos: [
-      '/src/assets/images/evidence_road_before_1791743003638.jpg'
+      roadBeforeImg
     ],
     targetResolutionDate: '2026-03-25T18:00:00Z',
     createdAt: '2026-03-18T10:15:00Z',
@@ -421,8 +423,8 @@ export const INITIAL_EVIDENCE: ResolutionEvidence[] = [
     submittingOfficerId: 'user-ao',
     submittingOfficerName: 'K. Saravanan (Tahsildar / AO Trichy West)',
     actionTaken: 'Highways and City Corporation joint engineering unit completed full depth bitumen restoration at Rockfort junction. 50mm Dense Bituminous Macadam (DBM) with roller compaction and thermoplastic edge lines.',
-    beforePhotoUrl: '/src/assets/images/evidence_road_before_1791743003638.jpg',
-    afterPhotoUrl: '/src/assets/images/evidence_road_after_1791743015421.jpg',
+    beforePhotoUrl: roadBeforeImg,
+    afterPhotoUrl: roadAfterImg,
     workOrderOrGoNumber: 'WO/TRY/CORP/2026/03-112',
     completionDate: '2026-03-23',
     inspectionCoordinates: {

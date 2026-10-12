@@ -6,6 +6,7 @@ import {defineConfig} from 'vite';
 export default defineConfig(() => {
   base:'/PODHUNALAM/',
   return {
+    base: '/PODHUNALAM/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {

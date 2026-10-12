@@ -20,6 +20,7 @@ import { Grievance, GrievanceCategory, PriorityLevel } from '../types';
 import { Language, translations } from '../i18n/translations';
 import { store } from '../services/store';
 import { GrievanceCard } from './GrievanceCard';
+import civicHeroImg from '../assets/images/civic_hero_district_1791742992671.jpg';
 
 interface CitizenPortalProps {
   language: Language;
@@ -120,8 +121,8 @@ export const CitizenPortal: React.FC<CitizenPortalProps> = ({
           {/* Right Column: Generated Civic Architecture Photography */}
           <div className="lg:col-span-5 relative min-h-[220px] lg:min-h-full">
             <img
-              src="/src/assets/images/civic_hero_district_1791742992671.jpg"
-              alt="Chengalpattu District Civic Administration and Infrastructure"
+              src={civicHeroImg}
+              alt="Tiruchirappalli District Civic Administration and Infrastructure"
               referrerPolicy="no-referrer"
               className="absolute inset-0 w-full h-full object-cover object-center"
             />
